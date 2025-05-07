@@ -77,13 +77,13 @@ input2.classList.add( 'flex','flex-col','mx-10','md:mx-20')
 document.getElementById('registerForm').appendChild(input2)
 
 const labelName2 = document.createElement('label')
-labelName2.id = 'name'
+labelName2.id = 'email'
 labelName2.innerText = 'Email'
 labelName2.value = 'email' 
 document.getElementById('input2').appendChild(labelName2)
 
 const inputName2 = document.createElement('input')
-inputName2.id = 'iName'
+inputName2.id = 'iEmail'
 inputName2.type = 'email'
 inputName2.placeholder='jane@gmail.com'
 inputName2.classList.add('border-2','border-blue-700',)
@@ -118,19 +118,31 @@ document.getElementById('registerForm').appendChild(input4)
 
 const labelName4 = document.createElement('label')
 labelName4.id = 'gender'
-labelName4.innerText = 'gender'
+labelName4.innerText = 'Gender'
 labelName4.value = 'gender' 
-document.getElementById('input2').appendChild(labelName4)
+document.getElementById('input4').appendChild(labelName4)
 
-const inputRad= document.createElement('div')
-document.getElementById('registerForm').appendChild(inputRad)
+const inputRad = document.createElement('div')
+document.getElementById('input4').appendChild(inputRad)
+
+const label2 = document.createElement('label');
+label2.id = 'inputRadio2';
+label2.innerText = 'Female';
+document.getElementById('inputRad').appendChild(label2);
+
 
 const inputRadio = document.createElement('input')
 inputRadio.id = 'inputRadio1'
-inputRadio.value = 'gender'
+inputRadio2.name = 'gender'
+inputRadio.value = 'female'
 inputRadio.type = 'radio'
 inputRadio.classList.add('border-2','border-blue-700',)
 document.getElementById('inputRad').appendChild(inputRadio)
+
+const label1 = document.createElement('label');
+label1.htmlForsn = 'inputRadio1';
+label1.innerText = 'Male';
+document.getElementById('inputRad').appendChild(label1);
 
 const inputRadio2 = document.createElement('input')
 inputRadio2.id = 'inputRadio2'
@@ -139,16 +151,6 @@ inputRadio2.value = 'male'
 inputRadio2.type = 'radio'
 inputRadio2.classList.add('border-2','border-blue-700',)
 document.getElementById('inputRad').appendChild(inputRadio2)
-
-const label1 = document.createElement('label');
-label1.htmlForsn = 'inputRadio1';
-label1.innerText = 'Male';
-document.getElementById('inputRad').appendChild(label1);
-
-const label2 = document.createElement('label');
-label2.htmlFor = 'inputRadio2';
-label2.innerText = 'Female';
-document.getElementById('inputRad').appendChild(label2);
 
 
 document.addEventListener("DOMContentLoaded", () =>{
